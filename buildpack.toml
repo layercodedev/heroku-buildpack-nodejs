@@ -1,12 +1,12 @@
-[buildpack]
-name = "Node.js"
+api = "0.7"
 
-  [publish.Ignore]
-  files = [
-      ".circle/",
-      ".github/",
-      "etc/",
-      "spec/",
-      "test/",
-      "makefile"
-  ]
+[buildpack]
+id = "heroku-nodejs"
+version = "0.0.1"
+name = "Heroku Node.js Buildpack"
+
+[[stacks]]
+id = "heroku-18"
+
+[[stacks]]
+id = "heroku-20"
